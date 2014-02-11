@@ -7,3 +7,6 @@ endif
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
+if filereadable(expand('~/.janus_vim_settings'))
+  source ~/.janus_vim_settings
+endif

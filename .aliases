@@ -1,0 +1,9 @@
+alias grep='grep --color'
+alias ll='ls -la'
+alias st='git status'
+alias rc='rails console'
+alias r="rails"
+
+if [ -f "$HOME/.aliases.local" ]; then
+  source "$HOME/.aliases.local"
+fi

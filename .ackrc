@@ -1,0 +1,15 @@
+--sort-files
+--follow
+
+--type-set=coffee=.coffee
+--type-set=haml=.haml
+--type-set=hamlc=.hamlc
+--type-set=sass=.sass,.scss
+--type-set=jbuilder=.jbuilder
+--type-set=eco=.eco
+
+--ignore-dir=vendor
+--ignore-dir=log
+--ignore-dir=tmp
+--ignore-dir=doc
+--ignore-dir=bin

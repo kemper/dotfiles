@@ -1,0 +1,32 @@
+if ! len(glob("~/.vim/backup/"))
+  echomsg "Backup directory ~/.vim/backup doesn't exist!"
+endif
+
+set dir& backupdir&
+set dir^=~/.vim/backup// backupdir^=~/.vim/backup//
+
+" Tab completion
+set wildmode=list:longest,list:full
+set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,local,*.png,*.jpg,*/tmp/*
+
+if has('persistent_undo')
+ set undodir^=~/.vim/undo// undofile
+endif
+
+imap <C-L> <SPACE>=><SPACE>
+map <LocalLeader>] :tabn<CR>
+map <LocalLeader>[ :tabp<CR>
+map <LocalLeader><CR> :tabnew<CR>
+map <LocalLeader>zz :call MaximizeToggle ()<CR>
+
+map <LocalLeader>d :Egrep \scontext\s\|\sdescribe\s\|\sit\s %<CR>
+
+function! MaximizeToggle()
+  if exists("g:split_maximized")
+    unlet g:split_maximized
+    :winc =
+  else
+    let g:split_maximized="true"
+    :60winc >
+  endif
+endfunction

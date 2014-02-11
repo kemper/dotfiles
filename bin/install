@@ -1,0 +1,24 @@
+#!/bin/sh
+
+cd "$(dirname $0)/.."
+
+for file in .[^.]*; do
+  case "$file" in
+    .git|.gitmodules|.gitignore)
+      ;;
+    *)
+      if [ ".git" = "$file" ]; then
+      else
+        if [ -h "$HOME/$file" ]; then
+          rm "$HOME/$file"
+        elif [ -e "$HOME/$file" ]; then
+          echo "$file backed up to $file.backup"
+          mv "$HOME/$file" "$HOME/$file.backup"
+        fi
+        ln -s "$PWD/$file" "$HOME/$file"
+        echo "$file installed."
+      fi
+      ;;
+  esac
+done
+

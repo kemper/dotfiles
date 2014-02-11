@@ -8,6 +8,7 @@ for file in .[^.]*; do
       ;;
     *)
       if [ ".git" = "$file" ]; then
+        echo "skipping .git"
       else
         if [ -h "$HOME/$file" ]; then
           rm "$HOME/$file"

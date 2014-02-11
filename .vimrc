@@ -10,3 +10,6 @@ endif
 if filereadable(expand('~/.janus_vim_settings'))
   source ~/.janus_vim_settings
 endif
+if filereadable(expand('~/.vimrc.vundle'))
+  source ~/.vimrc.vundle
+endif

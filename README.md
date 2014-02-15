@@ -25,6 +25,7 @@ I mostly want bash, vim, and tmux, all of which take config file arguments.
 2. alias vim and tmux to use CONFIG_HOME configs
 3. start bash with custom .bashrc, perhaps make an option to start with ~/.bashrc
 4. Automatically BundleInstall vundles
+5. Install vundles to a location other than ~/.vim and use that other location
 
 ### More reusable dotfile options
 

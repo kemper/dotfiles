@@ -1,5 +1,6 @@
+# Git expands ~/ to $HOME
 [init]
-  templatedir = ~/.git_template
+  #templatedir = ~/.git_template
 [core]
   excludesfile = ~/.cvsignore
 [color]

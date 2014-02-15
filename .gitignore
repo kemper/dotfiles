@@ -1,18 +1,5 @@
-[init]
-  templatedir = ~/.git_template
-[core]
-  excludesfile = ~/.cvsignore
-[color]
-  branch = auto
-  diff = auto
-  interactive = auto
-  status = auto
-[alias]
-  st = "status"
-  co = "checkout"
-[push]
-  default = current
-[rebase]
-  autosquash = true
-[include]
-  path = ~/.gitconfig.local
+.vim
+.viminfo
+.cache
+.lesshst
+.bash_history

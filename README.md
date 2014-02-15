@@ -26,6 +26,7 @@ I mostly want bash, vim, and tmux, all of which take config file arguments.
 3. start bash with custom .bashrc, perhaps make an option to start with ~/.bashrc
 4. Automatically BundleInstall vundles
 5. Install vundles to a location other than ~/.vim and use that other location
+6. Configure git to use custom file, do something better with .gitconfig.local
 
 ### More reusable dotfile options
 

@@ -1,5 +1,7 @@
 #!/bin/sh
 
+bin_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 cd "$(dirname $0)/.."
 
 for file in .[^.]*; do
@@ -23,10 +25,4 @@ for file in .[^.]*; do
   esac
 done
 
-if [ ! -d ~/.vim/bundle/vundle ]; then
-  git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-fi
-
-if [ ! -d ~/.vim/backup ]; then
-  mkdir -p ~/.vim/backup
-fi
+$bin_dir/setup

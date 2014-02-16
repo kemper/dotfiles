@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 bin_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 ls -l `find ~/ -maxdepth 1 -type l -print` | grep "$dir_name" | awk '{print $9}' | xargs -l unlink

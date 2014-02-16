@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 git clean -fdX # removes files created by bin/run
 mkdir -p $HOME/.vim/bundle

@@ -1,8 +1,8 @@
 if filereadable(expand('~/.vimrc.before'))
   source ~/.vimrc.before
 endif
-if filereadable(expand('~/.janus_vim_settings'))
-  source ~/.janus_vim_settings
+if filereadable(expand('~/.vimrc.janus_settings'))
+  source ~/.vimrc.janus_settings
 endif
 if filereadable(expand('~/.vimrc.keybindings'))
   source ~/.vimrc.keybindings

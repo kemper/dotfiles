@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+
+OptionParser.new do |opts|
+  opts.banner = "Usage: ./bin/installer [option]"
+
+  opts.on("-i", "--install", "Install dotfiles") do |v|
+  end
+  opts.on("-u", "--uninstall", "Uninstall dotfiles") do |v|
+  end
+  opts.on("-t", "--test", "Run installer tests") do |v|
+  end
+end.parse!
+

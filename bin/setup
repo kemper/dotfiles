@@ -1,5 +1,6 @@
 #!/bin/sh
 
+git clean -fdX # removes files created by bin/run
 mkdir -p $HOME/.vim/bundle
 mkdir -p $HOME/.vim/backup
 if [ ! -d "$HOME/.vim/bundle/vundle" ]; then

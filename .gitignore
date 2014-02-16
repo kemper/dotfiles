@@ -3,3 +3,4 @@
 .cache
 .lesshst
 .bash_history
+*.un~

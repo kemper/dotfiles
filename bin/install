@@ -1,6 +1,6 @@
 #!/bin/sh
 
-bin_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+#bin_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 cd "$(dirname $0)/.."
 
@@ -9,10 +9,14 @@ for file in .[^.]*; do
     .git|.gitmodules|.gitignore)
       ;;
     *)
+      echo "considering $file"
       if [ ".git" = "$file" ]; then
         echo "skipping .git"
+      elif [ ".." = "$file" ]; then
+        echo "skipping .."
       else
         if [ -h "$HOME/$file" ]; then
+          echo "rm'ing $file"
           rm "$HOME/$file"
         elif [ -e "$HOME/$file" ]; then
           echo "$file backed up to $file.backup"
@@ -25,4 +29,4 @@ for file in .[^.]*; do
   esac
 done
 
-$bin_dir/setup
+#$bin_dir/setup

@@ -1,4 +1,16 @@
 #!/bin/bash
 
-bin_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-ls -l `find ~/ -maxdepth 1 -type l -print` | grep "$dir_name" | awk '{print $9}' | xargs -l unlink
+cd "$(dirname $0)/.."
+
+for file in .[^.]*; do
+  case "$file" in
+    .git|.gitmodules|.gitignore|.vim)
+      ;;
+    *)
+      if [ -h "$HOME/$file" ]; then
+        echo "rm'ing $file"
+        rm "$HOME/$file"
+      fi
+      ;;
+  esac
+done

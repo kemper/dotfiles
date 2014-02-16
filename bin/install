@@ -1,12 +1,13 @@
 #!/bin/bash
 
-#bin_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+bin_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 cd "$(dirname $0)/.."
 
 for file in .[^.]*; do
   case "$file" in
-    .git|.gitmodules|.gitignore)
+    .git|.gitmodules|.gitignore|.vim)
+      echo "ignoring $file"
       ;;
     *)
       echo "considering $file"
@@ -29,4 +30,4 @@ for file in .[^.]*; do
   esac
 done
 
-#$bin_dir/setup
+$bin_dir/setup

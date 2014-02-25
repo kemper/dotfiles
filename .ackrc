@@ -13,3 +13,4 @@
 --ignore-dir=tmp
 --ignore-dir=doc
 --ignore-dir=bin
+--ignore-file=is:tags

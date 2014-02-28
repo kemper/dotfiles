@@ -10,6 +10,9 @@ endif
 if filereadable(expand('~/.vimrc.vundle'))
   source ~/.vimrc.vundle
 endif
+if filereadable(expand('~/.vimrc.tabline'))
+  source ~/.vimrc.tabline
+endif
 if filereadable(expand('~/.vimrc.after'))
   source ~/.vimrc.after
 endif

@@ -3,6 +3,7 @@
 git clean -fdX # removes files created by bin/run
 mkdir -p $HOME/.vim/bundle
 mkdir -p $HOME/.vim/backup
+mkdir -p $HOME/.vim/undo
 if [ ! -d "$HOME/.vim/bundle/vundle" ]; then
   git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
   # If I stop using $HOME, I'll have to run this in a bash with custom dotfile

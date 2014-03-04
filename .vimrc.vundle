@@ -24,11 +24,14 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-endwise.git'
 
-" Next 3 are all for snipmate
+" Next 4 are all for snipmate
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
+
 
 filetype plugin indent on     " required!
 "

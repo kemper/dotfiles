@@ -25,6 +25,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-endwise.git'
+Bundle 'kchmck/vim-coffee-script'
 
 " Next 4 are all for snipmate
 Bundle "MarcWeber/vim-addon-mw-utils"

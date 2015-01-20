@@ -13,12 +13,16 @@ if has('persistent_undo')
  set undodir^=~/.vim/undo// undofile
 endif
 
+let mapleader = ","
+let maplocalleader = ","
+
 imap <C-L> <SPACE>=><SPACE>
 map <LocalLeader>] :tabn<CR>
 map <LocalLeader>[ :tabp<CR>
 map <LocalLeader><CR> :tabnew<CR>
-map <Leader>t <Esc>:tabnew<CR>
+map <LocalLeader>t <Esc>:tabnew<CR>
 map <LocalLeader>zz :call MaximizeToggle ()<CR>
+map <LocalLeader>n :NERDTree<CR>
 
 map <LocalLeader>d :Egrep \scontext\s\|\sdescribe\s\|\sit\s %<CR>
 noremap Q <Nop>

@@ -8,7 +8,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " original repos on GitHub
-Bundle 'Lokaltog/vim-easymotion'
+" Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-rails.git'
 " non-GitHub repos
 " Bundle 'git://git.wincent.com/command-t.git'
@@ -25,12 +25,13 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-endwise.git'
 Bundle 'kchmck/vim-coffee-script'
+Plugin 'rking/ag.vim'
 
 " Next 4 are all for snipmate
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle "honza/vim-snippets"
+" Bundle "MarcWeber/vim-addon-mw-utils"
+" Bundle "tomtom/tlib_vim"
+" Bundle "garbas/vim-snipmate"
+" Bundle "honza/vim-snippets"
 
 
 filetype plugin indent on     " required!

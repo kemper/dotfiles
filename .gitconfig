@@ -15,9 +15,6 @@
   default = current
 [rebase]
   autosquash = true
-[user]
-  name = Kris Kemper
-  email = kriskemper@gmail.com
 [include]
   path = ~/.gitconfig.local
 [merge]

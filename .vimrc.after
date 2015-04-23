@@ -14,7 +14,7 @@ if has('persistent_undo')
 endif
 
 let mapleader = ","
-let maplocalleader = ","
+let maplocalleader = "\\"
 
 imap <C-L> <SPACE>=><SPACE>
 map <LocalLeader>] :tabn<CR>
@@ -26,6 +26,9 @@ map <LocalLeader>n :NERDTree<CR>
 
 map <LocalLeader>d :Egrep \scontext\s\|\sdescribe\s\|\sit\s %<CR>
 noremap Q <Nop>
+
+" set uncommon filetypes
+au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
 function! MaximizeToggle()
   if exists("g:split_maximized")
@@ -48,3 +51,10 @@ set statusline+=%1*%y%*%*\                " file type
 set statusline+=%10(L(%l/%L)%)\           " line
 set statusline+=%2(C(%v/125)%)\           " column
 set statusline+=%P                        " percentage of file
+
+
+set nocursorcolumn
+set nocursorline
+set norelativenumber
+syntax sync minlines=256
+

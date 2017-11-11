@@ -6,6 +6,7 @@ alias r="rails"
 alias be="bundle exec"
 alias b="bundle exec"
 alias gpr="git pull --rebase"
+alias st="git status"
 
 if [ -f "$HOME/.aliases.local" ]; then
   source "$HOME/.aliases.local"

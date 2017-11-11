@@ -3,6 +3,7 @@
   #templatedir = ~/.git_template
 [core]
   excludesfile = ~/.cvsignore
+  editor = vim
 [color]
   branch = auto
   diff = auto

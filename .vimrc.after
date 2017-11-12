@@ -58,3 +58,4 @@ set nocursorline
 set norelativenumber
 syntax sync minlines=256
 
+runtime! macros/matchit.vim
